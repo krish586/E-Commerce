@@ -28,10 +28,6 @@ public class Product
 	@Size(min=3,max=20 , message = "* Enter Charecters between 3~20")
 	private String name;
 	
-	@NotNull(message = "*Enter proper price ")
-	@DecimalMax(value = "100000" ,message = "*Enter below 1L/-")
-	@DecimalMin(value = "1",message = "*Enter Above 1/-")
-	private double price;
 	
 	@NotNull(message = "*Enter proper value ")
 	@DecimalMax(value = "10000" ,message = "*Enter below 10k")
